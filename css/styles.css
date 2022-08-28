@@ -355,17 +355,11 @@ img {
 .team-link:focus .team-ikon {
   fill: var(--secondary-color);
 }
-.current-link {
-  background-color: var(--accent-color);
-  fill: var(--secondary-color);
-}
 
 .team-ikon {
   fill: #afb1b8;
 }
-.current-ikon {
-  fill: var(--secondary-color);
-}
+
 /* секція клієнти */
 
 .client-list {
@@ -384,8 +378,21 @@ img {
 
 .client-item {
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   width: 170px;
   height: 92px;
+}
+.client-icon {
+  fill: #afb1b8;
+}
+
+.client-link:hover .client-icon,
+.client-item .client-link:focus .client-icon .client-item {
+  fill: var(--accent-color);
+}
+.client-item:hover,
+.client-item:focus {
+  border-color: var(--accent-color);
 }
 
 /* футер */
@@ -428,7 +435,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin-right: 156px;
 }
 
 .footer-adress {
@@ -501,6 +507,7 @@ img {
   text-transform: uppercase;
   color: var(--secondary-color);
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 /* Портфоліо */
